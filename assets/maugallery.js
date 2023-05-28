@@ -57,7 +57,11 @@
       }
     });
 
-    $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag).on("click", ".nav-link", function() {
+      $(".nav-link").removeClass("active-btn");
+      $(this).addClass("active-btn");
+    });
+
     $(".gallery").on("click", ".mg-prev", function() {
       $.fn.mauGallery.methods.prevImage(settings.lightboxId);
     });
@@ -236,6 +240,12 @@
       }
       $(".active-tag").removeClass("active active-tag");
       $(this).addClass("active-tag");
+      
+      // Reset the background color for all buttons
+      $(".nav-link").css("background-color", "");
+      
+      // Set the background color for the active button
+      $(this).css("background-color", "#A69851");
 
       var tag = $(this).data("images-toggle");
 
