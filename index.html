@@ -31,12 +31,33 @@
 <meta property="article:section" content="Article Section" />
 <meta property="article:tag" content="Article Tag" />
 <meta property="fb:admins" content="Facebook numberic ID" />
+
 	</head>
+	<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "LocalBusiness",
+	  "image": ["./assets/images/ninaforwebp.webp"],
+	  "name": "Nina Carducci photographe",
+	  "telephone": "05.56.67.78.89",
+	  "address": {
+		"@type": "PostalAddress",
+		"streetAddress": "68 avenue Alsace-Lorraine",
+		"addressLocality": "Bordeaux",
+		"postalCode": "33200"
+	  },
+	  "openingHoursSpecification": {
+		"@type": "OpeningHoursSpecification",
+		"opens": "du lundi au vendredi de 10h à 19 h"
+	  }
+	}
+	</script>
 <body>
 	<header>
 	
 <div class="top-header">
-	<h1 class="name">Nina Carducci photographe</h1>
+	<h1 itemprop="name" class="name">Nina Carducci photographe</h1>
 	<div class="nav">   
 		<nav>
 			<ul>
@@ -83,7 +104,7 @@
 
 <section id="about">
 	<div class="picture left">
-		<img src="./assets/images/ninaforwebp.webp"alt="the photographer">
+		<img itemprop="image"src="./assets/images/ninaforwebp.webp"alt="the photographer">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -186,12 +207,16 @@
 		<h2>Mes coordonnées</h2>
 	
 	<ul>
-		<li itemprop="address">68 avenue Alsace-Lorraine <br>33200 Bordeaux </li>
-		<li itemprop="telephone">05.56.67.78.89</li>
-		<li> du lundi au vendredi de 10h à 19h</li>
-	</ul>
-	<div itemprop="location" class="localisation"><iframe title="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.9630360342194!2d-0.6083524068099774!3d44.8464408911761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1684152864505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></address></iframe></div>
-</footer>
+		<<li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" itemprop="address">
+			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span> <br/>
+			<span itemprop="postalCode">33200</span> 
+			<span itemprop="addressLocality">Bordeaux</span> </li>
+					<li itemprop="telephone" itemprop="telephone">05.56.67.78.89</li>
+					
+			<span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification"><li itemprop="opens" content="du lundi au vendredi de 10h à 19h"> du lundi au vendredi de 10h à 19h</li></span>
+				</ul>
+				<div itemprop="location" class="localisation"><iframe title="localisation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.9630360342194!2d-0.6083524068099774!3d44.8464408911761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54d803d3494ff1%3A0x775d19897dd6276f!2s68%20Av.%20Alsace%20Lorraine%2C%2033200%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1684152864505!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></address></iframe></div>
+			</address></footer></span>
 <div id="social">
 <h2> mes reseaux</h2>
 <ul>
